@@ -1,5 +1,7 @@
 ## Welcome to my dev site for the Magento 2 Product Options pages.
 
+https://matthewfass.com/labels-product-options-development/
+
 #### Here's what I'm working on today:
 
 
