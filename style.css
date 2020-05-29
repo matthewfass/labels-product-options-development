@@ -73,6 +73,7 @@ textarea {width:100%;min-height:30vh;}
 /* ============================================== */
 .your-quote {position:fixed;background-color:white; left:0; bottom: 0;width:100%;background-color:#572831;color:white;padding:10px;}
 .your-quote .your-quote-title{text-align: center;padding:0;margin:0;margin-bottom:6px;text-transform: inherit;font-size: 1.4em;font-weight:bold;}
+
 .your-quote .your-quote-summary div {margin:1px;}
 .your-quote button {font-size: 2em; line-height:1.2em;padding: 4px 10px;}
 
