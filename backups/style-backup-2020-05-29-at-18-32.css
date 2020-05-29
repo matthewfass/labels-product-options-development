@@ -8,7 +8,7 @@
 /* li { border: 1px dashed orange;} */
 /* li div { border: 1px dashed green;} */
 /* .short-description-wrapper { border: 1px dashed red;} */
-html {filter:grayscale(100%);}
+html {-moz-filter:grayscale(100%); -webkit-filter:grayscale(100%); filter:gray;IE6-9 filter:grayscale(100%);}
 /* html{
 	-webkit-filter: saturate(8) hue-rotate(90deg);
 	filter: hue-rotate(90deg) saturate(.2) ;
@@ -73,7 +73,7 @@ textarea {width:100%;min-height:30vh;}
 /* ============================================== */
 .your-quote {position:fixed;background-color:white; left:0; bottom: 0;width:100%;background-color:#572831;color:white;padding:10px;}
 .your-quote .your-quote-title{text-align: center;padding:0;margin:0;margin-bottom:6px;text-transform: inherit;font-size: 1.4em;font-weight:bold;}
-.your-quote .your-quote-summary div {margin:1px;}
+.your-quote div {margin:1px;}
 .your-quote button {font-size: 2em; line-height:1.2em;padding: 4px 10px;}
 
 .customlabel_preview {display:grid;grid-template-columns: 1fr 1fr;column-gap: 20px;}
