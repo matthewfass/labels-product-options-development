@@ -1,41 +1,59 @@
-/* Custom Styles for Development */
+/* ============================================== */
+/* START Custom Styles for Development */
+/* ============================================== */
 
-/* div { border: 1px dashed orange;} */
+/* ============================================== */
+/* START Helpful design tool */
+/* ============================================== */
+/* li { border: 1px dashed orange;} */
+/* li div { border: 1px dashed green;} */
+/* .short-description-wrapper { border: 1px dashed red;} */
+html {-moz-filter:grayscale(100%); -webkit-filter:grayscale(100%); filter:gray;IE6-9 filter:grayscale(100%);}
 
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,"Helvetica Neue",Arial,sans-serif;font-size:0.85em;padding:0;margin:0;}
+/* ============================================== */
+/* START global styles */
+/* ============================================== */
+/* body */
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,"Helvetica Neue",Arial,sans-serif;line-height: 1.2em;}
+body{ font-size:calc(11px + .8vw); }
+@media screen and (min-width:1600px) {
+	body{ font-size: 22px; }
+}
 
+/* alignment */
 .center {text-align: center;}
+.hide,.hidden,.desktop{ position: absolute !important; top: -9999px !important;left: -9999px !important;}
 
-.hide,
-.hidden,
-.desktop{ position: absolute !important; top: -9999px !important;left: -9999px !important;}
-
-h1,h2,h3,h4,h5,h6{padding:0;margin:0;line-height:1.2em}
-
-.page-wrapper {max-width: 1400px; margin: 0 auto 50vh;padding:12px;}
-
-.logo{margin-bottom:20px}
-.logo img{width:75%;height:auto;max-width:600px}
-
-.artwork-buttons {margin-top: 20px;}
-
-button{font-size: 1.1em;margin-bottom: 10px;border-radius: 5px;padding: 6px 10px;text-transform: uppercase;width:100%;}
+/* buttons */
 button.default {background-color:green;color:white;}
 
-ul{ border: 1px solid silver;list-style: none; padding:0px; margin:0 0 20px 0;border-radius: 7px;}
-/* ul li{ border: 2px solid red;} */
+/* ============================================== */
+/* START header */
+/* ============================================== */
+.logo-wrapper{margin-top:30px; margin-bottom:10px;}
+.logo-wrapper img{width:100%; max-width: 600px; height:auto;}
 
-.short-description {margin: 20px 0;}
+/* ============================================== */
+/* START product description */
+/* ============================================== */
+.short-description-wrapper {margin: 20px 0;}
+.short-description {margin-top:20px;}
 
-.label{text-align:center;background-color: silver; padding:10px 10px; font-size: 1.4em;}
-.value{ padding:0px 10px 10px 10px; }
-.value li{ padding:0px 10px 10px 10px; }
+/* ============================================== */
+/* START product options */
+/* ============================================== */
+.product-options ul{ list-style: none; padding:0px; margin:0 0 40px 0;}
+.product-options li .label {color:white; background-color: #3f4044;border-bottom-left-radius: 0;border-bottom-right-radius: 0;}
+.product-options li .value{ padding:10px; margin-top:2px; border:1px solid #3f4044; border-radius: 0 7px 7px;}
 
-.your-quote {position:fixed;background-color:white; bottom: 0px;width:100%;background-color:#572831;color:white;}
-.your-quote .title-bar{text-align: center;padding:5px 0 0;font-size: 1.4em;font-weight: bold;background-color:#572831;color:white;text-transform: inherit;}
-.your-quote .container {max-width:300px;margin: 10px auto;}
-.your-quote div {margin:2px;}
+/* ============================================== */
+/* START fixed quote box */
+/* ============================================== */
+.your-quote {position:fixed;background-color:white; bottom: 0px;width:100%;background-color:#572831;color:white;padding:10px;}
+.your-quote .your-quote-title{text-align: center;padding:0;margin:0;margin-bottom:6px;text-transform: inherit;font-size: 1.4em;font-weight:bold;}
+.your-quote div {margin:1px;}
+.your-quote button {font-size: 2em; line-height:1.2em;padding: 4px 10px;}
+
 .customlabel_preview {display:grid;grid-template-columns: 1fr 1fr;column-gap: 20px;}
-/* .customlabel_preview div{text-align:right;} */
 .customlabel_preview_label {text-align:right;}
 .custom_product_addcart button {margin-top:10px;}
