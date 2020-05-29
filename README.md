@@ -1,37 +1,19 @@
-## Welcome to GitHub Pages
+## Welcome to my dev site for the Magento 2 Product Options pages.
 
-You can use the [editor on GitHub](https://github.com/matthewfass/labels-product-options-dev/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+#### Here's what I'm working on today:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+1. lets consider collapsing the product information on mobile? or if you have alternate idea i'm open. I like the idea bc it will keep clutter down on mobile and allow max room for call to action at top (upload artwork button).
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+2. lets try squeezing 2 options per row for all options
 
-```markdown
-Syntax highlighted code block
+3. upload artwork section needs 'email artwork later' checkbox option
 
-# Header 1
-## Header 2
-### Header 3
+4. we need to decide where to put some text explaining that we will match the colors of their artwork file. At top in upload artwork section may make most sense? maybe just a small 'i' information box at bottom of upload artwork option? or if you have ideas let me know
 
-- Bulleted
-- List
+5. we would like the google reviews to live at the bottom of the product pages. 
 
-1. Numbered
-2. List
+6. almost all option headers should have '?' hover over that will display additional information about that option, just like dutchlabelshop, except upload artwork, size, quantity and comments
 
-**Bold** and _Italic_ and `Code` text
+7. I think we can drop product name to quote sticky on mobile? looks a bit large currently and it repeats product name at top when you first land on page, so I think its ok to remove if you agree.
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/matthewfass/labels-product-options-dev/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
