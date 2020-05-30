@@ -14,7 +14,11 @@
 </head>
 
 <body>
+    <div class="instant-quote-header center">
+        Instant Price Quote
+    </div>
     <div class="main-content">
+
         <!-- START Account Header  -->
         <div class="account-header">
             <!-- My Account -->
@@ -38,16 +42,18 @@
         <!-- START Main Content  -->
         <div class="page-wrapper container">
             <div class="product-name">
-                <h1 itemprop="name">Woven Logo Labels</h1>
-                <h3>Fast Turnaround Available</h3>
+                <h1 itemprop="name" class="center">Woven Logo Labels</h1>
             </div>
             <div class="short-description-wrapper">
-                <button type="button" class="btn btn-info btn-block" data-toggle="collapse"
+                <button type="button" class="btn btn-info btn-primary btn-block" data-toggle="collapse"
                     data-target="#short-description">
                     <i class="fas fa-caret-down"></i>
                     See Product Info
                 </button>
                 <div id="short-description" class="short-description std collapse" itemprop="description">
+                    <div class="artwork-upload center">
+                        <img src="assets/dsc03547_002.jpg" alt="">
+                    </div>
                     <p>Our premium woven labels capture a high amount of detail and include up to 8 thread colors. High
                         quality labels reinforce the brand identity of your high quality
                         products, adding a unique and identifiable finishing touch.</p>
@@ -59,27 +65,30 @@
                         adjustments if necessary from your customer account. Your guaranteed
                         "Will Ship Date" is generated when you approve your proof!
                     </p>
+                    <h3>Fast Turnaround Available</h3>
                 </div>
             </div>
             <div class="product-options">
                 <ul>
                     <li>
-                        <div class="label">Artwork - Upload artwork</div>
+                        <!-- <div class="label">Artwork - Upload artwork</div> -->
+                        <div class="label">Your Artwork</div>
                         <div class="value artwork-buttons-outer-wrapper">
                             <div class="artwork-upload center">
                                 <img src="assets/file-upload-drag-drop.png" alt="">
                             </div>
-                            <div class="center">
-                                [ ] Request Free Artwork <br>
-                                [ ] I will email artwork after order
+                            <h3 class="center">Our Artists Will Match Your Artwork</h3>
+                            <div class="artwork-buttons">
+                                <i class="fas fa-square"></i> Upload Your Artwork (?)<br>
+                                <i class="far fa-square"></i> Request Free Artwork (?)<br>
+                                <i class="far fa-square"></i> I will email artwork after order (?)
                             </div>
-                            <h3 class="center">Our Artists Will Match Your Artwork!</h3>
                         </div>
                     </li>
                 </ul>
                 <ul>
                     <li>
-                        <div class="label">Style - Straight Cut</div>
+                        <div class="label">Label Style</div>
                         <div class="value"><a class="selected"
                                 href='https://qualitywovenlabels.com/media/customoptions/340/164/48/SC_4x.png'><img
                                     src="assets/SC_4x.png" referrerpolicy="no-referrer" alt="Straight Cut"></a><a
@@ -103,7 +112,7 @@
                 </ul>
                 <ul>
                     <li>
-                        <div class="label">Size - 2 x 0.625</div>
+                        <div class="label">Size</div>
                         <div class="value"><a class="selected"
                                 href='https://qualitywovenlabels.com/media/customoptions/340/1035/150/SC_2x625_4x.png'><img
                                     src="assets/SC_2x625_4x.png" referrerpolicy="no-referrer" alt="2 x 0.625"></a><a
@@ -118,7 +127,7 @@
                 </ul>
                 <ul>
                     <li>
-                        <div class="label">Thread Colors - Regular Thread (Any Color)</div>
+                        <div class="label">Thread Colors</div>
                         <div class="value"><a class="selected"
                                 href='https://qualitywovenlabels.com/media/customoptions/440/1/1/regular.png'><img
                                     src="assets/regular.png" referrerpolicy="no-referrer"
@@ -135,7 +144,7 @@
                 </ul>
                 <ul>
                     <li>
-                        <div class="label">Special Backing - Standard Sew-On</div>
+                        <div class="label">Special Backing</div>
                         <div class="value"><a class="selected"
                                 href='https://qualitywovenlabels.com/media/customoptions/450/1/1/sewon.png'><img
                                     src="assets/sewon.png" referrerpolicy="no-referrer"
@@ -150,7 +159,7 @@
                 </ul>
                 <ul>
                     <li>
-                        <div class="label">Do You Need Different Versions? - No, I Have A Single Design</div>
+                        <div class="label">Do You Need Different Versions?</div>
                         <div class="value"><a class="selected"
                                 href='https://qualitywovenlabels.com/media/customoptions/460/1/1/single.png'><img
                                     src="assets/single.png" referrerpolicy="no-referrer"
@@ -164,7 +173,7 @@
                 </ul>
                 <ul>
                     <li>
-                        <div class="label">Proof Options - Digital Proof Only</div>
+                        <div class="label">Proof Options</div>
                         <div class="value"><a class="selected"
                                 href='https://qualitywovenlabels.com/media/customoptions/470/1/1/digital.png'><img
                                     src="assets/digital.png" referrerpolicy="no-referrer"
@@ -180,7 +189,7 @@
                 </ul>
                 <ul>
                     <li>
-                        <div class="label">Turnaround Options - Standard: 15 Business Days</div>
+                        <div class="label">Turnaround Options</div>
                         <div class="value"><a class="selected"
                                 href='https://qualitywovenlabels.com/media/customoptions/480/1/1/standard.png'><img
                                     src="assets/standard.png" referrerpolicy="no-referrer"
@@ -225,20 +234,22 @@
             </div>
         </div>
     </div>
-    <div class="your-quote">
-        <div class="your-quote-summary container">
-            <div class="your-quote-title center">Your Quote</div>
-            <div class="center">
-                500 Woven Logo Labels
-            </div>
-            <div class="center">
-                @ $0.30/each for a total of $150
-            </div>
-            <div class="btn-wrapper center">
-                <button type="button" class="btn btn-primary">Add to Cart</button>
+    <footer>
+        <div class="your-quote">
+            <div class="your-quote-summary container">
+                <!-- <div class="your-quote-title center">Instant Quote</div> -->
+                <div class="center grid grid-3-col">
+                    <div class="product-name">500 Woven Logo Labels</div>
+                    <div class="product-each">$0.30/each</div>
+                    <div class="product-total">TOTAL: $150</div>
+                </div>
+                <div class="btn-wrapper center">
+                    <button type="button" class="btn btn-primary btn uppercase"><i class="far fa-cart-arrow-down"></i>
+                        Add to Cart</button>
+                </div>
             </div>
         </div>
-    </div>
+    </footer>
 </body>
 
 </html>

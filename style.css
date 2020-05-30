@@ -8,30 +8,30 @@
 /* li { border: 1px dashed orange;} */
 /* li div { border: 1px dashed green;} */
 /* .short-description-wrapper { border: 1px dashed red;} */
-html {filter:grayscale(100%);}
-/* html{
-	-webkit-filter: saturate(8) hue-rotate(90deg);
-	filter: hue-rotate(90deg) saturate(.2) ;
-} */
+
 /* ============================================== */
 /* START global styles */
 /* ============================================== */
 /* body */
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,"Helvetica Neue",Arial,sans-serif;line-height: 1.2em;}
-body{ font-size:calc(11px + .8vw); }
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,"Helvetica Neue",Arial,sans-serif;}
+/* body{ font-size:calc(13px + .8vw); }
 @media screen and (min-width:1600px) {
 	body{ font-size: 22px; }
-}
+} */
 
-a.selected img { border: 2px solid orange;}
-
-/* alignment */
+/* layout */
 .center {text-align: center;}
 .hide,.hidden,.desktop{ position: absolute !important; top: -9999px !important;left: -9999px !important;}
+.uppercase {text-transform:uppercase;}
+.grid {display:grid;}
+.grid-2-col{ grid-template-columns: 1fr 1fr;justify-items: center; }
+.grid-3-col{ grid-template-columns: 1fr 1fr 1fr;justify-items: center; }
+
 
 /* buttons */
 /* button.default {background-color:green;color:white;} */
 .btn-wrapper {padding: 10px;}
+button {font-size:inherit;}
 
 /* .nav-item { border: 2px solid orange; padding: 10px 20px;} */
 /* .nav-item.active { border: 2px solid blue; padding: 10px 20px;} */
@@ -46,37 +46,46 @@ textarea {width:100%;min-height:30vh;}
 /* START page wrapper */
 /* ============================================== */
 .main-content {position:relative;}
+.main-content {	-webkit-filter: grayscale(1);filter: grayscale(1); }
 .page-wrapper {margin-bottom: 30vh;}
 
 /* ============================================== */
 /* START header */
 /* ============================================== */
+.instant-quote-header {position:fixed;width:100%;z-index:10;height:40px;}
+.instant-quote-header {background-color:#202020;color:white;text-align:center;font-size:1.2em;padding:10px 0 0;}
+
 .account-header {height:40px; background-color:grey;}
-.logo-wrapper{margin-top:30px; margin-bottom:10px;}
+.logo-wrapper{margin-top:40px; margin-bottom:10px;}
 .logo-wrapper img{width:100%; max-width: 600px; height:auto;}
 
 /* ============================================== */
 /* START product description */
 /* ============================================== */
 .short-description-wrapper {margin: 20px 0;}
-.short-description {margin-top:20px;}
+.short-description {margin-top:20px;padding-bottom:10px;}
 
 /* ============================================== */
 /* START product options */
 /* ============================================== */
 .product-options ul{ list-style: none; padding:0px; margin:0 0 40px 0;}
-.product-options li .label {color:white; background-color: #3f4044;border-bottom-left-radius: 0;border-bottom-right-radius: 0;}
+.product-options li .label {color:white; background-color: #3f4044;border-bottom-left-radius: 0;border-bottom-right-radius: 0;font-size:18px;vertical-align: 1px;}
 .product-options li .value{ padding:10px; margin-top:2px; border:1px solid #3f4044; border-radius: 0 7px 7px;}
-.product-options li .value{display: grid; grid-template-columns: 1fr 1fr; }
+.product-options li .value .selected img { border: 2px solid orange;}
+
+.artwork-buttons {margin-left:30%;}
+
 /* ============================================== */
 /* START fixed quote box */
 /* ============================================== */
-.your-quote {position:fixed;background-color:white; left:0; bottom: 0;width:100%;background-color:#572831;color:white;padding:10px;}
-.your-quote .your-quote-title{text-align: center;padding:0;margin:0;margin-bottom:6px;text-transform: inherit;font-size: 1.4em;font-weight:bold;}
+footer {position:fixed;background-color:white; left:0; bottom: 0;width:100%;background-color:#572831;color:white;padding:10px;}
+footer {-webkit-filter: grayscale(1);filter: grayscale(1); }
+/* footer .your-quote .your-quote-title{text-align: center;padding:0;margin:0;margin-bottom:6px;text-transform: inherit;font-size: 1.4em;font-weight:bold;} */
 
-.your-quote .your-quote-summary div {margin:1px;}
-.your-quote button {font-size: 2em; line-height:1.2em;padding: 4px 10px;}
+/* footer .your-quote-summary {display:grid; grid-template-columns: 1fr 1fr;} */
+/* .your-quote .your-quote-summary div {margin:1px;} */
+/* .your-quote button {font-size: 2em; line-height:1.2em;padding: 4px 10px;} */
 
-.customlabel_preview {display:grid;grid-template-columns: 1fr 1fr;column-gap: 20px;}
+/* .customlabel_preview {display:grid;grid-template-columns: 1fr 1fr;column-gap: 20px;}
 .customlabel_preview_label {text-align:right;}
-.custom_product_addcart button {margin-top:10px;}
+.custom_product_addcart button {margin-top:10px;} */
