@@ -119,7 +119,7 @@ table.quantity tr.current-quantity {background-color:#572831;color:white;}
 footer {position:fixed;background-color:white; left:0; bottom: 0;width:100%;background-color:#572831;color:white;padding:10px;}
 footer {-webkit-filter: grayscale(1);filter: grayscale(1); }
 .order-summary {max-width:400px;margin:auto;}
-footer button.btn {animation: add-to-cart-shadow-pulse 2s infinite;}
+/* footer button.btn {animation: add-to-cart-shadow-pulse 2s infinite;} */
 
 /* footer .your-quote .your-quote-title{text-align: center;padding:0;margin:0;margin-bottom:6px;text-transform: inherit;font-size: 1.4em;font-weight:bold;} */
 
