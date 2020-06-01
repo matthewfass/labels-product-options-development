@@ -24,7 +24,7 @@
 	}
 }
 
-@keyframes add-to-cart-shadow-pulse
+/* @keyframes add-to-cart-shadow-pulse
 {
 	0% {
 		box-shadow: 0 0 0 0px rgba(255, 255, 255, .5);
@@ -32,7 +32,7 @@
 	100% {
 		box-shadow: 0 0 0 35px rgba(255, 255, 255, 0);
 	}
-}
+} */
 
 
 /* ============================================== */
