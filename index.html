@@ -77,7 +77,8 @@
                 <ul>
                     <li>
                         <!-- <div class="label">Artwork - Upload artwork</div> -->
-                        <div class="label">Your Artwork</div>
+                        <div class="label">Your Artwork <i class="fas fa-question-circle" data-toggle="tooltip" data-placement="top"
+                            title="Copy to come"></i></div>
                         <div class="value artwork-buttons-outer-wrapper">
                             <div class="artwork-upload center">
                                 <img src="assets/file-upload-drag-drop.png" alt="">
@@ -255,6 +256,11 @@
             </div>
         </div>
     </footer>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 </body>
 
 </html>
