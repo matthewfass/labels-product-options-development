@@ -9,6 +9,32 @@
 /* li div { border: 1px dashed green;} */
 /* .short-description-wrapper { border: 1px dashed red;} */
 
+
+
+/* ============================================== */
+/* START keyframes */
+/* ============================================== */
+@keyframes upload-shadow-pulse
+{
+	0% {
+		box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+	}
+	100% {
+		box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+	}
+}
+
+@keyframes add-to-cart-shadow-pulse
+{
+	0% {
+		box-shadow: 0 0 0 0px rgba(255, 255, 255, .5);
+	}
+	100% {
+		box-shadow: 0 0 0 35px rgba(255, 255, 255, 0);
+	}
+}
+
+
 /* ============================================== */
 /* START global styles */
 /* ============================================== */
@@ -75,17 +101,12 @@ textarea {width:100%;min-height:30vh;}
 .product-options li .value .selected img { border: 2px solid orange;}
 
 
-@keyframes shadow-pulse
-{
-	0% {
-		box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
-	}
-	100% {
-		box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
-	}
+.artwork-upload {font-size: 45vw;}
+@media only screen and (min-width: 992px) {
+	.artwork-upload {font-size: 15vw;}
 }
-.artwork-upload {font-size: 50vw;}
-.artwork-upload i {animation: shadow-pulse 2s infinite;}
+
+.artwork-upload i {animation: upload-shadow-pulse 2s infinite;}
 
 table.quantity{width:100%}
 table.quantity th, table.quantity td {padding:4px;}
@@ -97,6 +118,9 @@ table.quantity tr.current-quantity {background-color:#572831;color:white;}
 /* ============================================== */
 footer {position:fixed;background-color:white; left:0; bottom: 0;width:100%;background-color:#572831;color:white;padding:10px;}
 footer {-webkit-filter: grayscale(1);filter: grayscale(1); }
+.order-summary {max-width:400px;margin:auto;}
+footer button.btn {animation: add-to-cart-shadow-pulse 2s infinite;}
+
 /* footer .your-quote .your-quote-title{text-align: center;padding:0;margin:0;margin-bottom:6px;text-transform: inherit;font-size: 1.4em;font-weight:bold;} */
 
 /* footer .your-quote-summary {display:grid; grid-template-columns: 1fr 1fr;} */
