@@ -20,17 +20,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<script>
+    let productDescription = `skdlfjklsdfjklsdjf;`
+</script>
+
 <body>
-    <div class="instant-quote-header center">
-        Instant Price Quote
+    <div class="instant-quote-header mobile laptop">
+        <div class="header logo-wrapper">
+            <img src="assets/qwl-logo-image-only.png" alt="">
+        </div>
+        <div class="header price-quote-wrapper">
+            Quality Woven Labels<br />
+            Instant Price Quote
+        </div>
+        <div class="header nav-wrapper">
+            <!-- <div class="header cart-wrapper">
+                <i class="fas fa-cart-plus"></i>
+            </div> -->
+            <div class="header menu-wrapper">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
     </div>
 
     <div class="main-content">
 
         <!-- START HEADER TOP  -->
-        <div class="headertop top-bar center container">
+        <div class="headertop top-bar center container desktop">
             <div class="top-bar-menu menu-right">
-                <div class="tagline">Highest quality, fastest delivery and <br>lowest price guaranteed</div>
+                <!-- <div class="tagline">Highest quality, fastest delivery and <br>lowest price guaranteed</div> -->
                 <div class="telephone-number"><a href="tel:1-855-679-0009 M-F 9-5:30 EST">1-855-679-0009 M-F 9-5:30
                         EST</a></div>
                 <div class="account-links"><a href="#">My Account</a> | <a href="#">Sign In</a></div>
@@ -38,12 +56,13 @@
         </div><!-- END HEADER TOP  -->
 
         <!-- START Header  -->
-        <div class="logo-menu-cart-wrapper container">
+        <div class="logo-menu-cart-wrapper container desktop">
             <div class="header logo-wrapper">
-                <img src="assets/QWLlogo.png" alt="">
+                <img class="mobile tablet" src="assets/qwl-logo-image-only.png" alt="">
+                <img class="desktop" src="assets/qwl-logo.png" alt="">
             </div>
             <div class="cart-menu-wrapper">
-                <div class="header cart-wrapper">
+                <div class="header cart-wrapper desktop">
                     <i class="fas fa-cart-plus"></i>
                 </div>
                 <div class="header menu-wrapper">
@@ -52,14 +71,16 @@
             </div>
         </div>
 
-        <!-- START Main Content  -->
+        <!-- START Product Name  -->
+        <div class="product-name container">
+            <h1 itemprop="name" class="product-name">Woven Logo Labels</h1>
+        </div>
+
+        <!-- START Page Wrapper  -->
         <div class="page-wrapper container">
-            <div class="product-name">
-                <h1 itemprop="name" class="product-name">Woven Logo Labels</h1>
-            </div>
             <!-- START Product Info  -->
-            <div class="short-description-wrapper">
-                <button type="button" class="btn btn-info btn-primary btn-block btn-lg btn-dark" data-toggle="collapse"
+            <div class="product-description-wrapper">
+                <button type="button" class="btn btn-info btn-primary btn-block btn-dark" data-toggle="collapse"
                     data-target="#short-description">
                     <i class="fas fa-caret-down"></i>
                     See Product Info
@@ -124,7 +145,8 @@
                                                 <div
                                                     style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;">
                                                 </div>
-                                                <div style="position: absolute; left: 0px; top: 0px; z-index: 0;"></div>
+                                                <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+                                                </div>
                                             </div>
                                             <div class="gm-style-pbc"
                                                 style="z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;">
@@ -166,17 +188,21 @@
                                         <li><i class="star"></i></li>
                                     </ul>
                                 </div>
-                                <p class="review-text">I can't say enough great things about Quality Woven Lables! They
+                                <p class="review-text">I can't say enough great things about Quality Woven Lables!
+                                    They
                                     offer a top-notch
-                                    high-quality product at an affordable price with a quick turnaround. Their customer
+                                    high-quality product at an affordable price with a quick turnaround. Their
+                                    customer
                                     service team has
-                                    gone above and beyond numerous times to answer any and all of my questions relating
+                                    gone above and beyond numerous times to answer any and all of my questions
+                                    relating
                                     to orders, design,
                                     and general account questions. Absolutely amazing team! Thank you!</p>
                             </div>
                             <div class="review-item">
                                 <div class="review-meta"><span class="review-author">jilly j</span><span
-                                        class="review-sep">, </span><span class="review-date">Jan 8, 2020</span></div>
+                                        class="review-sep">, </span><span class="review-date">Jan 8, 2020</span>
+                                </div>
                                 <div class="review-stars">
                                     <ul>
                                         <li><i class="star"></i></li>
@@ -186,7 +212,8 @@
                                         <li><i class="star"></i></li>
                                     </ul>
                                 </div>
-                                <p class="review-text">Superior quality, the staff is very knowledgeable and we received
+                                <p class="review-text">Superior quality, the staff is very knowledgeable and we
+                                    received
                                     them with-in 5
                                     da
                                     ys. I recommend them highly.</p>
@@ -210,9 +237,11 @@
                                     Quality Woven Labels more
                                     than delivered. They are my new go to. They will save me about $500 a year, they
                                     listened and did the
-                                    colors I wanted and even offered to do a more detailed version ( I said not needed),
+                                    colors I wanted and even offered to do a more detailed version ( I said not
+                                    needed),
                                     and it was only
-                                    about 2 weeks to complete and receive my order. No unreasonable minimums for a small
+                                    about 2 weeks to complete and receive my order. No unreasonable minimums for a
+                                    small
                                     company like myself
                                     that doesn't need to sit on that much inventory at one time. Plus I don't always
                                     have the budget to drop
@@ -477,7 +506,8 @@
                     <div class="option-values no-flex">
                         <form action="/action_page.php">
                             <div class="form-group">
-                                <label for="project-notes">Please add any notes or comments you might have about this
+                                <label for="project-notes">Please add any notes or comments you might have about
+                                    this
                                     order</label><br>
                                 <textarea id="project-notes" name="project-notes"></textarea>
                             </div>
@@ -570,31 +600,37 @@
 
             </div> <!-- END PRODUCT OPTIONS -->
 
-        </div>
-    </div>
-    <footer>
+        </div><!-- END Page Wrapper -->
+    </div><!-- END Main Content -->
+    <div class="footer">
         <div class="your-quote">
             <div class="your-quote-summary container">
                 <!-- <div class="center">Woven Logo Labels</div> -->
                 <!-- <div class="your-quote-title center">Instant Quote</div> -->
+                <!-- <div class="center grid grid-3-col order-summary">
+                    <div class="product-size">Size 2"x1"</div>
+                    <div class="product-size"></div>
+                    <div class="product-artwork-file-name"><span>My Great Artork With A Long File Name</span>.jpg</div>
+                </div> -->
                 <div class="center grid grid-3-col order-summary">
-                    <div class="product-name">Quantity 500</div>
+                    <div class="product-quantity">Quantity 500</div>
                     <div class="product-each">$0.50/each</div>
                     <div class="product-total">TOTAL: $250</div>
                 </div>
                 <div class="btn-wrapper add-to-cart-wrapper center">
                     <button type="button" class="btn btn-primary btn-lg uppercase"><i
                             class="far fa-cart-arrow-down"></i>
-                        Add to Cart</button>
+                        Add to Cart
+                    </button>
                 </div>
             </div>
         </div>
-    </footer>
-    <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-    </script>
+        </footer>
+        <script>
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
 </body>
 
 </html>
