@@ -14,12 +14,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/340a067955.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="colors.css">
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="./css/colors.css">
+    <link rel="stylesheet" href="./css/style.css">
 
 </head>
 
@@ -50,12 +51,12 @@
     <!-- ============================================== -->
     <div class="headertop top-bar center container desktop">
         <div class="top-bar-menu menu-right">
-            <!-- <div class="tagline">Highest quality, fastest delivery and <br>lowest price guaranteed</div> -->
+            <div class="tagline">Highest quality, fastest delivery and lowest price guaranteed</div>
             <div class="telephone-number"><a href="tel:1-855-679-0009 M-F 9-5:30 EST">1-855-679-0009 M-F 9-5:30
                     EST</a></div>
             <div class="account-links"><a href="#">My Account</a> | <a href="#">Sign In</a></div>
         </div>
-    </div><!-- END HEADER TOP  -->
+    </div>
 
     <!-- ============================================== -->
     <!-- START Logo + Cart + Nav  -->
@@ -85,36 +86,88 @@
             <h1 itemprop="name" class="product-name">Woven Logo Labels</h1>
         </div>
 
-        <!-- START Product Description - Desktop  -->
         <div class="row">
-            <div id="product-slideshop-desktop" class="product-slideshow col-md-6">
-                <img src="assets/woven-logo-label-sample-product-image.jpg" alt="">
-            </div>
-            <div id="product-description-desktop" class="product-description col-md-6"></div>
-        </div>
-
-        <!-- START Page Wrapper  -->
-        <div class="page-wrapper">
-            <!-- START Product Info  -->
-            <div class="product-description-wrapper">
-                <button type="button" class="btn btn-info btn-primary btn-block btn-dark" data-toggle="collapse"
-                    data-target="#short-description">
-                    <i class="fas fa-caret-down"></i>
-                    See Product Info
-                </button>
-                <div id="short-description" class="short-description std collapse" itemprop="description">
-                    <div class="product-slideshow-description-flex">
-                        <div class="product-slideshow">
-                            <img src="assets/woven-logo-label-sample-product-image.jpg" alt="">
-                        </div>
-                        <div id="product-description-mobile" class="product-description">
-                        </div>
-                    </div>
+            <!-- START Slide Show + Description  -->
+            <div class="col-md-4">
+                <!-- START Product Info  -->
+                <div class="product-slideshow">
+                    <img src="assets/woven-logo-label-sample-product-image.jpg" alt="">
                 </div>
+                <div id="product-description-mobile" class="product-description">
+                    <p>Our premium woven labels capture a high amount of detail and include up to 8 thread colors. High
+                        quality labels
+                        reinforce the brand identity of your high quality products, adding a unique and identifiable
+                        finishing touch.</p>
+                    <p>Receive a same day digital proof when you order before 12:00 PM EST Monday-Friday. Our artists
+                        will prepare your
+                        proof within 2 business days maximum depending on current volume. You will receive an email
+                        notification when it's
+                        ready. Approve your proof or request any adjustments if necessary from your customer account.
+                        Your guaranteed "Will
+                        Ship Date" is generated when you approve your proof!</p>
+                    <h3>Fast Turnaround Available</h3>
+                </div>
+
+
+                <!-- START Order Summary -->
+                <div class="order-summary">
+                    <h2>Your Order Summary</h2>
+                    <figure>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Option</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Width</td>
+                                    <td>2&quot; / 5.08 cm</td>
+                                </tr>
+                                <tr>
+                                    <td>Height</td>
+                                    <td>1&quot; / 2.54 cm</td>
+                                </tr>
+                                <tr>
+                                    <td>Style</td>
+                                    <td>Straight Cut</td>
+                                </tr>
+                                <tr>
+                                    <td>Size</td>
+                                    <td>2&quot; x 1&quot;</td>
+                                </tr>
+                                <tr>
+                                    <td>Thread Colors</td>
+                                    <td>Regular Thread (Any Color)</td>
+                                </tr>
+                                <tr>
+                                    <td>Special Backing</td>
+                                    <td>Standard Sew-On</td>
+                                </tr>
+                                <tr>
+                                    <td>Do You Need Different Versions?</td>
+                                    <td>No, I Have A Single Design</td>
+                                </tr>
+                                <tr>
+                                    <td>Proof Options</td>
+                                    <td>Digital Proof Only</td>
+                                </tr>
+                                <tr>
+                                    <td>Turnaround Options</td>
+                                    <td>Standard</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </figure>
+                </div>
+
+
+
             </div>
 
             <!-- START PRODUCT OPTIONS -->
-            <div class="product-options">
+            <div class="product-options  col-md-8">
 
                 <!-- START UPLOAD YOUR ARTWORK -->
                 <div class="product-option">
@@ -306,7 +359,7 @@
                 </div> <!-- END ORDER COMMENTS -->
 
                 <!-- START QUANTITY & PRICE -->
-                <div class="product-option">
+                <div class="product-option hide">
                     <div class="option-type">Quantity &amp Price <i class="fas fa-question-circle" data-toggle="tooltip"
                             data-placement="top" title="Copy to come"></i></div>
                     <div class="option-values no-flex">
@@ -388,10 +441,11 @@
                     </div>
                 </div> <!-- END QUANTITY & PRICE -->
 
-            </div> <!-- END PRODUCT OPTIONS -->
 
-        </div><!-- END Page Wrapper -->
-    </div><!-- END Main Content -->
+            </div>
+        </div>
+    </div>
+    <!-- END Main Content -->
 
 
     <div class="footer">
@@ -404,7 +458,7 @@
                     <div class="product-size"></div>
                     <div class="product-artwork-file-name"><span>My Great Artork With A Long File Name</span>.jpg</div>
                 </div> -->
-                <div class="center grid grid-3-col order-summary">
+                <div class="center grid grid-3-col add-to-cart-summary">
                     <div class="product-quantity">Quantity 500</div>
                     <div class="product-each">$0.50/each</div>
                     <div class="product-total">TOTAL: $250</div>
