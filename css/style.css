@@ -157,12 +157,12 @@ table.quantity tr.current-quantity {background-color:var(--accent-color-3);color
 /* ============================================== */
 /* order summary*/
 /* ============================================== */
-.order-summary {
+.order-summary { border: 2px solid orange; padding:10px;margin-top: 20px;margin-bottom: 20px;}
+.order-summary-sticky {
 	position: -webkit-sticky; /* Safari */
 	position: sticky;
 	top: 0;
 }
-.order-summary { border: 2px solid orange; padding:10px;margin-top: 20px;}
 
 
 
