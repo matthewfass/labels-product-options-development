@@ -20,8 +20,8 @@
 	--deep-jungle-green: hsla(183, 90%, 34%, 1);
 	--accent-color-2: hsla(183, 90%, 34%, 1);
 
-	--yellow-orange: hsla(36, 75%, 99%, 1);
-	--accent-color-3: hsla(36, 75%, 99%, 1);
+	--yellow-orange: #F3CA40;
+	--accent-color-3: #F3CA40;
 
 	--saffron: hsla(46, 74%, 95%, 1);
 	--accent-color-4: hsla(46, 74%, 95%, 1);
@@ -31,4 +31,8 @@
 
 	--rich-black-fogra-29: hsla(205, 100%, 14%, 1);
 	--accent-color-6: hsla(205, 100%, 14%, 1);
+
+
+
+	
 }

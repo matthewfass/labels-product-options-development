@@ -43,7 +43,7 @@ body{color:var(--text-color-1);}
 /* ============================================== */
 .btn-wrapper {padding: 10px;}
 button {font-size:inherit;}
-.btn-dark, .btn-dark:hover, .btn-dark:active {background-color:var(--charcoal);}
+.btn-dark, .btn-dark:hover, .btn-dark:active {background-color:var(--brand-color-1);}
 
 /* ============================================== */
 /* images */
@@ -69,7 +69,7 @@ textarea {width:100%;height:15vw;}
 /* ============================================== */
 /* instant quote header */
 /* ============================================== */
-.instant-quote-header {position:fixed;width:100%;z-index:10;;-webkit-filter: var(--effect);filter: var(--effect);}
+.instant-quote-header {position:fixed;width:100%;z-index:10;-webkit-filter: var(--effect);filter: var(--effect);}
 .instant-quote-header {background-color:var(--accent-color-4);color:var(--text-color-1-inverse);text-align:center;font-size:1.2em;padding:10px 20px 10px 15px;display:flex;justify-content: space-between;}
 .instant-quote-header .logo-wrapper {width:36px;}
 .instant-quote-header .price-quote-wrapper {margin-top:-2px;}
@@ -91,11 +91,11 @@ textarea {width:100%;height:15vw;}
 	
 .logo-menu-cart-wrapper .logo-wrapper {width:70%; height:auto;}
 .logo-menu-cart-wrapper .logo-wrapper img{width:100%; max-width: 500px; height:auto;}
-.cart-menu-wrapper {font-size: 5vw;color:var(--charcoal);display:flex;flex-wrap:wrap;}
+.cart-menu-wrapper {font-size: 5vw;color:var(--brand-color-1);display:flex;flex-wrap:wrap;}
 .cart-menu-wrapper i {margin-left:10px;}
 
 @media only screen and (min-width: 1200px) {
-	.cart-menu-wrapper {font-size: 3vw;color:var(--charcoal);display:flex;flex-wrap:wrap;}
+	.cart-menu-wrapper {font-size: 3vw;color:var(--brand-color-1);display:flex;flex-wrap:wrap;}
 	.cart-menu-wrapper i {margin-left:1vw;}
 }
 	
@@ -103,7 +103,7 @@ textarea {width:100%;height:15vw;}
 /* product name */
 /* ============================================== */
 h1.product-name {color:var(--brand-color-1);font-size: 13vw;line-height:1.0em;font-family: 'Rouge Script', cursive;text-align: center; padding: 20px 0;}
-/* h1.product-name { border: 1px dashed var(--charcoal);} */
+/* h1.product-name { border: 1px dashed var(--brand-color-1);} */
 @media only screen and (min-width: 768px) {
 	h1.product-name {font-size: 11vw;border:0;}
 }
@@ -126,9 +126,9 @@ h1.product-name {color:var(--brand-color-1);font-size: 13vw;line-height:1.0em;fo
 /* ============================================== */
 /* product options */
 /* ============================================== */
-.product-options .option-type {display:inline-block;color:white;background-color:var(--brand-color-2);font-size:1.2em;padding:2px 10px; border-radius:7px 7px 0 0;}
+.product-options .option-type {display:inline-block;background-color:var(--accent-color-3);font-size:1.2em;padding:2px 10px; border-radius:7px 7px 0 0;}
 .product-options .option-type i {margin-left:10px;font-size:0.8em;vertical-align:2px;}
-.product-options .option-values {padding:10px;border:1px solid var(--brand-color-2);border-radius:0 7px 7px;display:flex;flex-wrap:wrap;margin-bottom:30px;justify-content:space-evenly;}
+.product-options .option-values {padding:10px;border:1px solid var(--accent-color-3);border-radius:0 7px 7px;display:flex;flex-wrap:wrap;margin-bottom:30px;justify-content:space-evenly;}
 .product-options .option-value {width:45%;padding:5%;margin:1%;}
 @media only screen and (min-width:578px) {
 	.product-options .option-value {width:17%;padding:2%;margin:1%;}
@@ -157,7 +157,7 @@ table.quantity tr.current-quantity {background-color:var(--rich-black-fogra-29);
 /* ============================================== */
 /* fixed quote box */
 /* ============================================== */
-.footer {position:fixed;left:0; bottom: 0;width:100%;background-color:var(--accent-color-3);color:white;padding:10px;}
+.footer {position:fixed;left:0; bottom: 0;width:100%;background-color:var(--accent-color-4);padding:10px;}
 .footer {-webkit-filter: var(--effect);filter: var(--effect); }
 .footer .product-artwork-file-name  {white-space: nowrap; max-width: 40vw; overflow: hidden; text-overflow: ellipsis; }
 .order-summary {max-width:400px;margin:auto;}
