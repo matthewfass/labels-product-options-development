@@ -70,12 +70,14 @@ textarea {width:100%;height:15vw;}
 /* instant quote header */
 /* ============================================== */
 .instant-quote-header {position:fixed;width:100%;z-index:10;-webkit-filter: var(--effect);filter: var(--effect);}
-.instant-quote-header {background-color:var(--accent-color-4);color:var(--text-color-1-inverse);text-align:center;font-size:1.2em;padding:10px 20px 10px 15px;display:flex;justify-content: space-between;}
+.instant-quote-header {background-color:var(--accent-color-5);text-align:center;font-size:1.2em;padding:10px 20px 10px 15px;display:flex;justify-content: space-between;}
+.instant-quote-header {background-color:var(--accent-color-11)}
+/* .instant-quote-header {color:white} */
 .instant-quote-header .logo-wrapper {width:36px;}
 .instant-quote-header .price-quote-wrapper {margin-top:-2px;}
 /* .instant-quote-header .nav-wrapper {width:20%; display: flex;} */
 .instant-quote-header .nav-wrapper {font-size: 1.6em;}
-.instant-quote-header .nav-wrapper > div {margin-left: 10px;}
+.instant-quote-header .nav-wrapper > div {margin-left: 1px;}
 
 /* ============================================== */
 /* account header */
@@ -157,7 +159,9 @@ table.quantity tr.current-quantity {background-color:var(--rich-black-fogra-29);
 /* ============================================== */
 /* fixed quote box */
 /* ============================================== */
-.footer {position:fixed;left:0; bottom: 0;width:100%;background-color:var(--accent-color-4);padding:10px;}
+.footer {position:fixed;left:0; bottom: 0;width:100%;background-color:var(--accent-color-1);padding:10px;}
+.footer {background-color:var(--accent-color-10);}
+.footer {color:white}
 .footer {-webkit-filter: var(--effect);filter: var(--effect); }
 .footer .product-artwork-file-name  {white-space: nowrap; max-width: 40vw; overflow: hidden; text-overflow: ellipsis; }
 .order-summary {max-width:400px;margin:auto;}
