@@ -11,7 +11,7 @@
 --brand-color-2:#FAAE40;
 --brand-color-3:#E3E3E3;
 
-
+/* accent colors */
 --accent-color-1:  #264653ff; /* charcoal */
 --accent-color-2:  #095256ff; /* deep-jungle-green */
 --accent-color-3:  #fcb040ff; /* yellow-orange */
@@ -24,5 +24,8 @@
 --accent-color-9:  #8f250cff; /* kobe */
 --accent-color-10:  #691e06ff; /* liver-organ */
 --accent-color-11:  #ffcf99ff; /* deep-champagne */
+
+/* gradients */
+
 
 }

@@ -91,15 +91,22 @@
 
         <!-- START Product Name  -->
         <div class="product-name">
-            <h1 itemprop="name" class="product-name p-0 m-0">Woven Logo Labels</h1>
+            <h1 itemprop="name" class="product-name pt-2 pb-2 m-0">Woven Logo Labels</h1>
         </div>
         <!-- START Slide Show + Description  -->
-        <div class="row">
+        <button type="button" class="btn btn-info btn-primary btn-block btn-dark mobile tablet mb-4" data-toggle="collapse"
+            data-target="#product-information">
+            <i class="fas fa-caret-down"></i>
+            See Product Info
+        </button>
+
+        <div id="product-information" class="row desktop">
             <!-- START Product Info  -->
             <div class="product-slideshow col-md-3">
                 <img src="assets/woven-logo-label-sample-product-image.jpg" alt="">
             </div>
             <div id="product-description-mobile" class="product-description  col-md-5">
+                <!-- <h3 class="mt-0 pt-0">Product Description</h3> -->
                 <p>Our premium woven labels capture a high amount of detail and include up to 8 thread colors. High
                     quality labels
                     reinforce the brand identity of your high quality products, adding a unique and identifiable
@@ -113,12 +120,29 @@
                     Ship Date" is generated when you approve your proof!</p>
             </div>
             <div id="product-description-mobile" class="product-description  col-md-4">
-                <h3 class="mt-0">How It Works</h3>
-                text to come
+                <h3 class="mt-0 pt-0">Your Order Includes</h3>
+                <ul>
+                    <li>Free Graphic Artwork</li>
+                    <li>Free Sample Photo</li>
+                    <li>Fastest Delivery </li>
+                    <li>Lowest Price Quote </li>
+                </ul>
+                <!-- <h3 class="mt-0 pt-0">How It Works</h3>
+                <ol>
+                    <li>Receive your digital proof within one business day. Approve your proof or make any changes if
+                        necessary from
+                        your account. </li>
+                    <li>If you require a Sample Photo, one will be provided within 4 business days of approving your
+                        digital proof.</li>
+                    <li>Once all approvals are complete, your turnaround time starts and your Ship Date will be posted
+                        to your customer
+                        account.</li>
+                </ol> -->
+
             </div>
         </div>
 
-        <h3 class="center">Fast Turnaround Available</h3>
+        <!-- <h3 class="center">Fast Turnaround Available</h3> -->
 
         <div class="row">
 
@@ -401,17 +425,18 @@
             </div>
 
             <!-- START Order Summary -->
-            <div class="col-md-4 desktop">
+            <div class="col-md-4 position-sticky">
                 <div class="order-summary">
-                    <h2 class="center">Your Instant Quote</h2>
+                    <h4 class="center border-bottom pb-1">Your Instant Quote</h4>
+                    <h3 class="center border-bottom pb-2">Woven Logo Labels</h3>
                     <figure>
-                        <table>
-                            <thead>
+                        <table class="mt-2">
+                            <!-- <thead>
                                 <tr>
                                     <th>Option</th>
                                     <th>Value</th>
                                 </tr>
-                            </thead>
+                            </thead> -->
                             <tbody>
                                 <tr>
                                     <td>Width</td>
@@ -449,10 +474,48 @@
                                     <td>Turnaround Options</td>
                                     <td>Standard</td>
                                 </tr>
+                                <tr class="desktop">
+                                    <td>Quantity</td>
+                                    <td>500</td>
+                                </tr>
+                                <tr class="desktop">
+                                    <td>Unit Price</td>
+                                    <td>$0.50/each</td>
+                                </tr>
+                                <tr class="desktop">
+                                    <td>Order Total</td>
+                                    <td>$250</td>
+                                </tr>
                             </tbody>
                         </table>
                     </figure>
                 </div>
+                <!-- START Your Quote - Inline on Desktop - Fixed to bottom on mobile/tablet -->
+                <div class="your-quote-wrapper">
+                    <div class="your-quote container">
+                        <div class="your-quote-summary">
+                            <!-- <div class="center">Woven Logo Labels</div> -->
+                            <!-- <div class="your-quote-title center">Instant Quote</div> -->
+                            <!-- <div class="center grid grid-3-col order-summary">
+                                        <div class="product-size">Size 2"x1"</div>
+                                        <div class="product-size"></div>
+                                        <div class="product-artwork-file-name"><span>My Great Artork With A Long File Name</span>.jpg</div>
+                                    </div> -->
+                            <div class="center grid grid-3-col add-to-cart-summary mobile tablet">
+                                <div class="product-quantity">Quantity 500</div>
+                                <div class="product-each">$0.50/each</div>
+                                <div class="product-total">TOTAL: $250</div>
+                            </div>
+                            <div class="btn-wrapper add-to-cart-wrapper center">
+                                <button type="button" class="btn btn-primary btn-lg uppercase"><i
+                                        class="far fa-cart-arrow-down"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
 
@@ -460,34 +523,6 @@
         </div>
     </div>
     <!-- END Main Content -->
-
-
-    <!-- START Your Quote - Inline on Desktop - Fixed to bottom on mobile/tablet -->
-    <div class="your-quote-wrapper">
-        <div class="your-quote container">
-            <div class="your-quote-summary">
-                <!-- <div class="center">Woven Logo Labels</div> -->
-                <!-- <div class="your-quote-title center">Instant Quote</div> -->
-                <!-- <div class="center grid grid-3-col order-summary">
-                    <div class="product-size">Size 2"x1"</div>
-                    <div class="product-size"></div>
-                    <div class="product-artwork-file-name"><span>My Great Artork With A Long File Name</span>.jpg</div>
-                </div> -->
-                <div class="center grid grid-3-col add-to-cart-summary">
-                    <div class="product-quantity">Quantity 500</div>
-                    <div class="product-each">$0.50/each</div>
-                    <div class="product-total">TOTAL: $250</div>
-                </div>
-                <div class="btn-wrapper add-to-cart-wrapper center">
-                    <button type="button" class="btn btn-primary btn-lg uppercase"><i
-                            class="far fa-cart-arrow-down"></i>
-                        Add to Cart
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
 
 
     <script>
