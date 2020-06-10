@@ -206,6 +206,8 @@ table.quantity tr.current-quantity {background-color:var(--accent-color-3);}
 	position: sticky;
 	top: 0;
 }
+.order-summary tr{border-bottom:1px solid silver;}
+.order-summary td{vertical-align:top;padding:6px;}
 .order-summary td:first-child{font-weight: bold;}
 
 
