@@ -12,12 +12,13 @@
         content="https://matthewfass.com/labels-product-options-development/assets/dsc03547_002.jpg">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     <script src="https://kit.fontawesome.com/340a067955.js" crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./css/colors.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -29,32 +30,35 @@
     <!-- START MOBILE FIXED HEADER TOP  -->
     <!-- ============================================== -->
     <div class="instant-quote-header mobile laptop">
-        <div class="header logo-wrapper">
-            <img src="assets/qwl-logo-image-only.png" alt="">
+        <div class="header nav-bars-wrapper">
+            <i class="fas fa-bars"></i>
         </div>
         <div class="header price-quote-wrapper">
-            Quality Woven Labels<br />
-            Instant Price Quote
+            <div class="company-name">Quality Woven Labels</div>
+            <div class="app-name">Instant Price Quote</div>
         </div>
-        <div class="header nav-wrapper">
-            <!-- <div class="header cart-wrapper">
-                <i class="fas fa-cart-plus"></i>
-            </div> -->
-            <div class="header menu-wrapper">
-                <i class="fas fa-bars"></i>
-            </div>
+        <div class="header cart-wrapper">
+            <i class="fas fa-cart-plus"></i>
         </div>
     </div>
 
     <!-- ============================================== -->
     <!-- START DESKTOP HEADER TOP  -->
     <!-- ============================================== -->
-    <div class="headertop top-bar center container desktop">
-        <div class="top-bar-menu menu-right">
-            <div class="tagline">Highest quality, fastest delivery and lowest price guaranteed</div>
-            <div class="telephone-number"><a href="tel:1-855-679-0009 M-F 9-5:30 EST">1-855-679-0009 M-F 9-5:30
-                    EST</a></div>
-            <div class="account-links"><a href="#">My Account</a> | <a href="#">Sign In</a></div>
+    <div class="headertop top-bar desktop">
+        <div class="container d-flex justify-content-between">
+            <div class="promotion">
+                <span class="free">Highest quality, fastest delivery &amp; lowest price guaranteed</span>
+            </div>
+            <div class="top-bar-menu menu-right d-flex justify-content-end">
+                <div id="top-bar-phone-number" class="menu-right-item menu-right-item-1"><a href="tel:855-679-0009"><i
+                            class="fas fa-phone"></i> 1-855-679-0009 M-F 9-5:30 EST</a></div>
+                <div id="top-bar-my-account" class="menu-right-item menu-right-item-2"><a class="my-account"
+                        href="https://ilabels.name/customer/account/">My Account</a></div>
+                <div id="top-bar-sign-in" class="menu-right-item menu-right-item-3"><a
+                        class="header_account_link login-logout"
+                        href="https://ilabels.name/customer/account/logout/">Logout</a></div>
+            </div>
         </div>
     </div>
 
@@ -62,16 +66,20 @@
     <!-- START Logo + Cart + Nav  -->
     <!-- ============================================== -->
     <div class="logo-menu-cart-wrapper container desktop">
-        <div class="header logo-wrapper">
-            <img class="mobile tablet" src="assets/qwl-logo-image-only.png" alt="">
-            <img class="desktop" src="assets/qwl-logo.png" alt="">
-        </div>
-        <div class="cart-menu-wrapper">
-            <div class="header cart-wrapper desktop">
-                <i class="fas fa-cart-plus"></i>
+        <div class="row">
+            <div class="header logo-wrapper col-md-6">
+                <img class="mobile tablet" src="assets/qwl-logo-image-only.png" alt="">
+                <img class="desktop" src="assets/qwl-logo.png" alt="">
             </div>
-            <div class="header menu-wrapper">
-                <i class="fas fa-bars"></i>
+            <div class="cart-menu-wrapper col-md-6 right">
+                <div class="d-flex justify-content-end">
+                    <div class="header cart-wrapper">
+                        <i class="fas fa-cart-plus"></i>
+                    </div>
+                    <div class="header menu-wrapper">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -83,91 +91,39 @@
 
         <!-- START Product Name  -->
         <div class="product-name">
-            <h1 itemprop="name" class="product-name">Woven Logo Labels</h1>
+            <h1 itemprop="name" class="product-name p-0 m-0">Woven Logo Labels</h1>
+        </div>
+        <!-- START Slide Show + Description  -->
+        <div class="row">
+            <!-- START Product Info  -->
+            <div class="product-slideshow col-md-3">
+                <img src="assets/woven-logo-label-sample-product-image.jpg" alt="">
+            </div>
+            <div id="product-description-mobile" class="product-description  col-md-5">
+                <p>Our premium woven labels capture a high amount of detail and include up to 8 thread colors. High
+                    quality labels
+                    reinforce the brand identity of your high quality products, adding a unique and identifiable
+                    finishing touch.</p>
+                <p>Receive a same day digital proof when you order before 12:00 PM EST Monday-Friday. Our artists
+                    will prepare your
+                    proof within 2 business days maximum depending on current volume. You will receive an email
+                    notification when it's
+                    ready. Approve your proof or request any adjustments if necessary from your customer account.
+                    Your guaranteed "Will
+                    Ship Date" is generated when you approve your proof!</p>
+            </div>
+            <div id="product-description-mobile" class="product-description  col-md-4">
+                <h3 class="mt-0">How It Works</h3>
+                text to come
+            </div>
         </div>
 
+        <h3 class="center">Fast Turnaround Available</h3>
+
         <div class="row">
-            <!-- START Slide Show + Description  -->
-            <div class="col-md-4">
-                <!-- START Product Info  -->
-                <div class="product-slideshow">
-                    <img src="assets/woven-logo-label-sample-product-image.jpg" alt="">
-                </div>
-                <div id="product-description-mobile" class="product-description">
-                    <p>Our premium woven labels capture a high amount of detail and include up to 8 thread colors. High
-                        quality labels
-                        reinforce the brand identity of your high quality products, adding a unique and identifiable
-                        finishing touch.</p>
-                    <p>Receive a same day digital proof when you order before 12:00 PM EST Monday-Friday. Our artists
-                        will prepare your
-                        proof within 2 business days maximum depending on current volume. You will receive an email
-                        notification when it's
-                        ready. Approve your proof or request any adjustments if necessary from your customer account.
-                        Your guaranteed "Will
-                        Ship Date" is generated when you approve your proof!</p>
-                    <h3>Fast Turnaround Available</h3>
-                </div>
-
-
-                <!-- START Order Summary -->
-                <div class="order-summary desktop">
-                    <h2>Your Order Summary</h2>
-                    <figure>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Option</th>
-                                    <th>Value</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Width</td>
-                                    <td>2&quot; / 5.08 cm</td>
-                                </tr>
-                                <tr>
-                                    <td>Height</td>
-                                    <td>1&quot; / 2.54 cm</td>
-                                </tr>
-                                <tr>
-                                    <td>Style</td>
-                                    <td>Straight Cut</td>
-                                </tr>
-                                <tr>
-                                    <td>Size</td>
-                                    <td>2&quot; x 1&quot;</td>
-                                </tr>
-                                <tr>
-                                    <td>Thread Colors</td>
-                                    <td>Regular Thread (Any Color)</td>
-                                </tr>
-                                <tr>
-                                    <td>Special Backing</td>
-                                    <td>Standard Sew-On</td>
-                                </tr>
-                                <tr>
-                                    <td>Do You Need Different Versions?</td>
-                                    <td>No, I Have A Single Design</td>
-                                </tr>
-                                <tr>
-                                    <td>Proof Options</td>
-                                    <td>Digital Proof Only</td>
-                                </tr>
-                                <tr>
-                                    <td>Turnaround Options</td>
-                                    <td>Standard</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </figure>
-                </div>
-
-
-
-            </div>
 
             <!-- START PRODUCT OPTIONS -->
-            <div class="product-options  col-md-8">
+            <div class="product-options col-md-8">
 
                 <!-- START UPLOAD YOUR ARTWORK -->
                 <div class="product-option">
@@ -443,12 +399,71 @@
 
 
             </div>
+
+            <!-- START Order Summary -->
+            <div class="col-md-4 desktop">
+                <div class="order-summary">
+                    <h2 class="center">Your Instant Quote</h2>
+                    <figure>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Option</th>
+                                    <th>Value</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Width</td>
+                                    <td>2&quot; / 5.08 cm</td>
+                                </tr>
+                                <tr>
+                                    <td>Height</td>
+                                    <td>1&quot; / 2.54 cm</td>
+                                </tr>
+                                <tr>
+                                    <td>Style</td>
+                                    <td>Straight Cut</td>
+                                </tr>
+                                <tr>
+                                    <td>Size</td>
+                                    <td>2&quot; x 1&quot;</td>
+                                </tr>
+                                <tr>
+                                    <td>Thread Colors</td>
+                                    <td>Regular Thread (Any Color)</td>
+                                </tr>
+                                <tr>
+                                    <td>Special Backing</td>
+                                    <td>Standard Sew-On</td>
+                                </tr>
+                                <tr>
+                                    <td>Do You Need Different Versions?</td>
+                                    <td>No, I Have A Single Design</td>
+                                </tr>
+                                <tr>
+                                    <td>Proof Options</td>
+                                    <td>Digital Proof Only</td>
+                                </tr>
+                                <tr>
+                                    <td>Turnaround Options</td>
+                                    <td>Standard</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </figure>
+                </div>
+            </div>
+
+
+
         </div>
     </div>
     <!-- END Main Content -->
 
 
-    <div class="footer">
+    <!-- START Your Quote - Inline on Desktop - Fixed to bottom on mobile/tablet -->
+    <div class="your-quote-wrapper">
         <div class="your-quote container">
             <div class="your-quote-summary">
                 <!-- <div class="center">Woven Logo Labels</div> -->
