@@ -1,6 +1,7 @@
 /* ============================================== */
 /* helpful design tool */
 /* ============================================== */
+/* * { border: 1px dashed purple;} */
 /* div { border: 1px dashed purple;} */
 /* li div { border: 1px dashed green;} */
 /* .product-description-wrapper { border: 1px dashed red;} */
@@ -19,11 +20,14 @@
 /* ============================================== */
 /* global styles */
 /* ============================================== */
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,"Helvetica Neue",Arial,sans-serif;}
+body{font-family:var(--body-font-1);font-weight: 300;}
 body{color:var(--brand-color-1);}
-body{
-	background:rgba(245, 244, 163, 0.05); 
-}
+body{background:rgba(245, 244, 163, 0.05); }
+
+h1,
+h2,
+h3,
+h4 {font-weight: 300;}
 
 /* ============================================== */
 /* layout */
@@ -41,13 +45,6 @@ body{
 	.container{max-width:1200px !important;}
 }
 	
-
-/* .m-0 {margin: 0 !important;}
-.mt-0 {margin-top: 0 !important;}
-.mb-0 {margin-bottom: 0 !important;}
-.p-0 {padding: 0 !important;}
-.pt-0 {padding-top: 0 !important;}
-.pb-0 {padding-bottom: 0 !important;} */
 
 /* ============================================== */
 /* styles */
@@ -72,14 +69,14 @@ img{max-width:100%; height: auto;}
 /* ============================================== */
 /* forms  */
 /* ============================================== */
-textarea {width:100%;height:15vw;}
+textarea {width:100%;height:20vh;max-height: 600px;}
 
 
 /* ============================================== */
 /* instant quote header */
 /* ============================================== */
 .instant-quote-header {position:fixed;width:100%;z-index:10;-webkit-filter: var(--effect);filter: var(--effect);}
-.instant-quote-header {background-color:var(--accent-color-5);text-align:center;font-size:1.2em;line-height: 1.2em; padding:15px;display:flex;justify-content: space-between;}
+.instant-quote-header {text-align:center;font-size:1.2em;line-height: 1.2em; padding:15px;display:flex;justify-content: space-between;}
 .instant-quote-header {background-color:var(--accent-color-11)}
 .instant-quote-header .nav-bars-wrapper,
 .instant-quote-header .cart-wrapper {font-size:2em;margin-top: 4px;}
@@ -132,31 +129,30 @@ textarea {width:100%;height:15vw;}
 /* ============================================== */
 .logo-menu-cart-wrapper {margin-top:60px; margin-bottom:10px;}	
 /* .logo-menu-cart-wrapper .logo-wrapper {width:70%; height:auto;} */
-.logo-menu-cart-wrapper .logo-wrapper img{width:100%; max-width: 500px; height:auto;}
+.logo-menu-cart-wrapper .logo-wrapper img{width:100%; max-width: 400px; height:auto;}
 /* .cart-menu-wrapper {font-size: 5vw;color:var(--brand-color-1);display:flex;flex-wrap:wrap;} */
 /* .cart-menu-wrapper i {margin-left:10px;} */
 
 @media only screen and (min-width: 1200px) {
-	.cart-menu-wrapper {font-size: 2.5vw;color:var(--brand-color-1);}
-	.cart-menu-wrapper i {margin-left:1vw;}
+	.logo-menu-cart-wrapper {margin-top:15px; margin-bottom:15px;}	
+	.cart-menu-wrapper {font-size: 1.75vw;color:var(--brand-color-1);}
+	.cart-menu-wrapper i {margin-left:20px;}
 }
 	
 /* ============================================== */
 /* product name */
 /* ============================================== */
-h1.product-name {color:var(--brand-color-1);font-size: 13vw;line-height:1.2em;font-family: 'Rouge Script', cursive;text-align: center; padding: 20px 0;}
-/* h1.product-name { border: 1px dashed var(--brand-color-1);} */
+h1.product-name {color:var(--brand-color-1);font-family: var(--script-font-3);text-align: center; padding: 20px 0;}
+h1.product-name {line-height:1.2em;}
 @media only screen and (min-width: 768px) {
-	h1.product-name {font-size: 5.5vw;text-align: left; }
-}
-@media only screen and (min-width: 1400px) {
-	h1.product-name {font-size: 5.5vw;}
+	h1.product-name {text-align: left;}
 }
 	
 
 /* ============================================== */
 /* product description */
 /* ============================================== */
+.product-information-wrapper {margin-bottom:20px;}
 @media only screen and (min-width: 768px) {
 	.product-slideshow-description-flex {display:flex; flex-wrap:wrap;}
 	.product-slideshow-description-flex div {width: 45%;margin-right:2%;}
@@ -164,7 +160,6 @@ h1.product-name {color:var(--brand-color-1);font-size: 13vw;line-height:1.2em;fo
 }
 .product-slideshow {margin: 10px 0;}
 .product-description-wrapper {margin: 20px 0;}
-.product-description {font-size: 1.1rem;}
 
 /* ============================================== */
 /* product options */
@@ -176,9 +171,15 @@ h1.product-name {color:var(--brand-color-1);font-size: 13vw;line-height:1.2em;fo
 @media only screen and (min-width:578px) {
 	.product-options .option-value {width:17%;padding:2%;margin:1%;}
 }
+@media only screen and (min-width: 992px) {
+	.product-options .option-value {width:30%;}
+
+}
+
+
 .product-options .option-value {border: 1px dashed white;border-radius:7px;}
 .product-options .option-value:hover {border: 1px dashed silver;}
-.product-options .option-value.default {border: 1px solid rgba(192, 192, 192, 0.75);background-color:rgba(192, 192, 192, 0.25);}
+.product-options .option-value.default {border: 1px solid var(--border-color-2);background-color:var(--background-color-2);}
 .product-options .option-image img {width:100%;height:auto;}
 .product-options .option-label {text-align:center}
 
@@ -200,13 +201,11 @@ table.quantity tr.current-quantity {background-color:var(--accent-color-3);}
 /* ============================================== */
 /* order summary*/
 /* ============================================== */
-.order-summary { border: 2px solid orange; padding:10px;margin-top: 30px;}
-.order-summary-sticky {
-	position: -webkit-sticky; /* Safari */
-	position: sticky;
-	top: 0;
-}
-.order-summary tr{border-bottom:1px solid silver;}
+.order-summary {margin-top: 30px;border:1px solid var(--accent-color-3);border-radius:7px 7px 0 0;}
+.order-summary .order-summary-header { background-color:var(--accent-color-11); padding:10px 0 12px;}
+.order-summary .scrolling-options-chosen{ margin: 10px; max-height:65vh; overflow-y: scroll; border:1px solid var(--accent-color-3);border-radius:7px;}
+.order-summary tr{border-bottom:1px solid silver;font-size: 0.85rem;line-height: 1.1rem;;}
+.order-summary tr:last-child{border-bottom:none;}
 .order-summary td{vertical-align:top;padding:6px;}
 .order-summary td:first-child{font-weight: bold;}
 

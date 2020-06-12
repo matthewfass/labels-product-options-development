@@ -2,7 +2,14 @@
 /* variables */
 /* ============================================== */
 :root {
-/* effects */
+
+/* fonts */
+--body-font-1: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,"Helvetica Neue",Arial,sans-serif;
+--body-font-2: 'Rouge Script', cursive;
+--script-font-1: 'Rouge Script', cursive;
+--script-font-2: 'Playball', cursive;
+
+/* effects */    
 --effect: grayscale(1);
 --effect: none;
 
@@ -25,7 +32,12 @@
 --accent-color-10:  #691e06ff; /* liver-organ */
 --accent-color-11:  #ffcf99ff; /* deep-champagne */
 
-/* gradients */
+/* background */
+--background-color-1: rgba(192, 192, 192, 0.25);
+--background-color-2: rgba(192, 192, 192, 0.25);
 
+/* background */
+--border-color-1: rgba(192, 192, 192, 0.25);
+--border-color-2: rgba(192, 192, 192, 0.75);
 
 }
