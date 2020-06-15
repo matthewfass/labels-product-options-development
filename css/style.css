@@ -4,7 +4,7 @@
 /* ============================================== */
 /* * { border: 1px dashed purple;} */
 /* div { border: 1px dashed purple;} */
-/* li div { border: 1px dashed green;} */
+/* .product-information-wrapper div { border: 1px dashed green;} */
 /* .product-description-wrapper { border: 1px dashed red;} */
 @keyframes upload-shadow-pulse
 {
@@ -19,7 +19,7 @@
 /* ============================================== */
 /* global styles */
 /* ============================================== */
-body{font-family:var(--body-font-1);font-weight: 300;}
+body{font-family:var(--body-font-1);font-weight: 400;}
 body{color:var(--brand-color-1);}
 body{background:rgba(245, 244, 163, 0.05); }
 h1,
@@ -41,6 +41,7 @@ h4 {font-weight: 300;}
 	.container{max-width:1200px !important;}
 }
 
+
 /* ============================================== */
 /* styles */
 /* ============================================== */
@@ -48,6 +49,11 @@ h4 {font-weight: 300;}
 .grid {display:grid;}
 .grid-2-col{ grid-template-columns: 1fr 1fr;justify-items: center; }
 .grid-3-col{ grid-template-columns: 1fr 1fr 1fr;justify-items: center; }
+
+/* ============================================== */
+/* bootstrap additions */
+/* ============================================== */
+.shadow-sm {border:1px solid var(--accent-color-3);border-radius: 7px;}
 
 /* ============================================== */
 /* buttons */
@@ -121,21 +127,22 @@ h1.product-name {line-height:1.2em;}
 /* ============================================== */
 /* product description */
 /* ============================================== */
-.product-information-wrapper {margin-bottom:30px;border:1px solid var(--accent-color-3);border-radius:7px;padding:20px;background-color: white;}
+.product-information-wrapper {margin-bottom:30px;border-radius:7px;padding:20px;background-color: white;}
 @media only screen and (min-width: 768px) {
 	.product-slideshow-description-flex {display:flex; flex-wrap:wrap;}
 	.product-slideshow-description-flex div {width: 45%;margin-right:2%;}
 }
 .product-slideshow {margin: 10px 0;}
 .product-description-wrapper {margin: 20px 0;}
-i.fa-star {color:var(--brand-color-2)}
+/* i.fa-star {color:var(--brand-color-2)} */
+.how-it-works {padding:20px;}
 
 /* ============================================== */
 /* product options */
 /* ============================================== */
 .product-options .option-type {display:inline-block;background-color:var(--accent-color-3);font-size:1.2em;padding:2px 10px; border-radius:7px 7px 0 0;}
 .product-options .option-type i {margin-left:10px;font-size:0.8em;vertical-align:2px;}
-.product-options .option-values {padding:10px;background-color:white;border:1px solid var(--accent-color-3);border-radius:0 7px 7px;display:flex;flex-wrap:wrap;margin-bottom:30px;justify-content:space-evenly;}
+.product-options .option-values {padding:10px;background-color:white;border-radius:0 7px 7px;display:flex;flex-wrap:wrap;margin-bottom:30px;justify-content:space-evenly;}
 .product-options .option-value {width:45%;padding:5%;margin:1%;}
 @media only screen and (min-width:578px) {
 	.product-options .option-value {width:17%;padding:2%;margin:1%;}
@@ -161,20 +168,20 @@ table.quantity tr.current-quantity {background-color:var(--accent-color-3);font-
 /* ============================================== */
 /* order summary*/
 /* ============================================== */
-.order-summary {margin-top: 30px;border:1px solid var(--accent-color-3);border-radius:7px;background-color: white;}
+.order-summary {margin-top: 30px;border-radius:7px;background-color: white;}
 .order-summary .order-summary-header { background-color:var(--accent-color-11); padding:10px 0 12px;}
-.order-summary .scrolling-options-chosen{ margin: 10px; max-height:65vh; overflow-y: scroll; border:1px solid var(--accent-color-3);border-radius:7px;}
+.order-summary .scrolling-options-chosen{ margin: 10px; max-height:65vh; overflow-y: scroll; border-radius:7px;}
 .order-summary tr{border-bottom:1px solid silver;font-size: 0.85rem;line-height: 1.1rem;;}
 .order-summary tr:last-child{border-bottom:none;}
-.order-summary td{vertical-align:top;padding:6px;}
+.order-summary td{vertical-align:top;padding:10px 5px;}
 .order-summary td:first-child{font-weight: bold;}
 
 /* ============================================== */
 /* fixed quote box */
 /* ============================================== */
-.your-quote-wrapper {background-color:var(--accent-color-1);padding:10px;}
+.your-quote-wrapper {background-color:var(--accent-color-1);padding:10px;border-radius:0 0 7px 7px}
 @media only screen and (max-width: 991px) {
-	.your-quote-wrapper {position:fixed;left:0; bottom: 0;width:100%;}
+	.your-quote-wrapper {position:fixed;left:0; bottom: 0;width:100%;border-radius:0px;}
 }
 .your-quote-wrapper {background-color:var(--accent-color-10);}
 .your-quote-wrapper {color:white}
@@ -185,4 +192,4 @@ table.quantity tr.current-quantity {background-color:var(--accent-color-3);font-
 /* ============================================== */
 /* footer */
 /* ============================================== */
-.footer-wrapper {height:30vw; background-color: var(--brand-color-1); color:white;}
+.footer {padding: 20px 0;}
